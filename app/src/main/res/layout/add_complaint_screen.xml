@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".AddComplaintScreen">
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="100dp"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#375f45"
+            android:orientation="horizontal"
+            android:background="#375f45"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/back_icon"
+                app:tint="@color/white"
+                android:paddingVertical="11dp"
+                android:id="@+id/backBtn"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:text="Add Complaint"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:paddingVertical="10dp"
+                android:fontFamily="@font/sansita_regular"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingVertical="5dp"
+                app:tint="@color/white"
+                android:id="@+id/logout"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Enter Your Complaint"
+            android:paddingLeft="30dp"
+            android:gravity="center_vertical"
+            android:textColor="#000000"
+            android:fontFamily="@font/sansita_bold"
+            android:textSize="25sp"
+            />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardCornerRadius="20dp"
+        android:layout_weight="2.5"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:elevation="5dp"
+        app:cardUseCompatPadding="true"
+        android:backgroundTint="#A5D6A7"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginVertical="15dp"
+                    android:src="@drawable/complaint"
+                    app:tint="#000000"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:text="Type of Complaint"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/sansita_bold"
+                    android:textSize="20dp"
+                    />
+
+            </LinearLayout>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginVertical="10dp"
+                android:id="@+id/complaintType"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="12dp"
+            android:backgroundTint="#E1DCDC"
+            app:cardElevation="6dp"
+            >
+
+            <EditText
+                android:id="@+id/complaint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Complaint"
+                android:background="@null"
+                android:paddingLeft="15dp"
+
+                android:textColor="@color/black"
+                android:textColorHint="#656060"
+                android:gravity="start"
+                android:paddingTop="20dp"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="50dp"
+            android:layout_marginHorizontal="50dp">
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:id="@+id/submitComplaintBtn"
+                android:background="@drawable/gradient"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="Submit Complaint"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>

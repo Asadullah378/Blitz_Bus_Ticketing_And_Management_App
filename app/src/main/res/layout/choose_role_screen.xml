@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseRoleScreen"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:strokeColor="#375f45"
+        app:strokeWidth="0dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Choose Role"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:fontFamily="@font/sansita_bold"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginBottom="50dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="5dp"
+                android:backgroundTint="#375f45">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="70dp"
+                        android:background="@color/white"
+                        android:id="@+id/userScreen">
+
+                        <ImageView
+                            android:paddingVertical="10dp"
+                            android:paddingHorizontal="5dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1.2"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/user_icon"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="3dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="match_parent"
+                            app:strokeColor="@color/black"
+                            app:strokeWidth="3dp"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:backgroundTint="@color/white">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Bus User"
+                                android:textSize="20dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="30dp"
+                                android:textColor="#000000"
+                                android:fontFamily="@font/sansita_bold"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="70dp"
+                        android:background="@color/white"
+                        android:id="@+id/managerScreen">
+
+                        <ImageView
+                            android:paddingVertical="10dp"
+                            android:paddingHorizontal="5dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1.2"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/manager_icon"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="3dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            app:strokeColor="@color/black"
+                            app:strokeWidth="3dp"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:backgroundTint="@color/white">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Bus Manager"
+                                android:textSize="20dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="30dp"
+                                android:textColor="#000000"
+                                android:fontFamily="@font/sansita_bold"/>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginBottom="70dp"
+                        android:background="@color/white"
+                        android:id="@+id/guest">
+
+                        <ImageView
+                            android:paddingVertical="10dp"
+                            android:paddingHorizontal="5dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1.2"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/guest_icon"/>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="3dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            app:strokeColor="@color/black"
+                            app:strokeWidth="3dp"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:backgroundTint="@color/white"
+                           >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="Guest"
+                                android:textSize="20dp"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="30dp"
+                                android:textColor="#000000"
+                                android:fontFamily="@font/sansita_bold"/>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/editProfile"
+        android:title="Edit Profile"
+        android:icon="@drawable/profile_icon"
+        />
+
+    <item
+        android:id="@+id/transactionsHistory"
+        android:title="Transactions History"
+        android:icon="@drawable/transaction_icon"/>
+
+    <item
+        android:id="@+id/travelHistory"
+        android:title="Travel History"
+        android:icon="@drawable/history_icon"/>
+
+    <item
+        android:id="@+id/announcements"
+        android:title="Announcements"
+        android:icon="@drawable/announcement_black_icon"/>
+
+</menu>

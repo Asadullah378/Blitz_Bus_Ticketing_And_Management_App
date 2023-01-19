@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="10dp"
+        app:cardElevation="8dp"
+        android:id="@+id/schedule_card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Departure"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:id="@+id/depLocation"
+                        android:fontFamily="@font/sansita_bold"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Departure Date"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp"
+                        android:textColor="#403838"
+                        android:id="@+id/depDate"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Departure Time"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp"
+                        android:textColor="#403838"
+                        android:id="@+id/depTime"
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="PKR. 0.0"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:textSize="18sp"
+                        android:textColor="#423D3D"
+                        android:id="@+id/price"
+                        android:fontFamily="@font/sansita_regular"
+
+                        />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:src="@drawable/bus_route_icon"
+                    />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Arrival"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:id="@+id/arrLocation"
+                        android:fontFamily="@font/sansita_bold"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Arrival Date"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp"
+                        android:textColor="#403838"
+                        android:id="@+id/arrDate"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Arrival Time"
+                        android:paddingLeft="20dp"
+                        android:gravity="center_vertical"
+                        android:textSize="13sp"
+                        android:textColor="#403838"
+                        android:id="@+id/arrTime"
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+                        android:backgroundTint="#E53935"
+                        android:textColor="@color/white"
+                        android:id="@+id/sched_del"
+                        android:layout_marginVertical="5dp"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Delete"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

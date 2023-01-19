@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBusScreen"
+    android:orientation="vertical">
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="100dp"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#375f45"
+        android:orientation="horizontal"
+        android:background="#375f45"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/back_icon"
+            app:tint="@color/white"
+            android:paddingVertical="11dp"
+            android:id="@+id/backBtn"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="Add Bus"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:paddingVertical="10dp"
+            android:fontFamily="@font/sansita_regular"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingVertical="5dp"
+            app:tint="@color/white"
+            android:id="@+id/logout"
+            />
+
+    </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:src="@drawable/bus_icon"
+            android:scaleType="fitCenter"/>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="12dp"
+        android:backgroundTint="#E1DCDC"
+        app:cardElevation="6dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Bus Number"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="#656060"
+            android:id="@+id/busNum"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="12dp"
+        android:backgroundTint="#E1DCDC"
+        app:cardElevation="6dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Number of Seats"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="#656060"
+            android:id="@+id/busSeats"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Select Model"
+        android:gravity="left"
+        android:layout_weight="0.5"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sansita_bold"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/gender_icons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <com.google.android.material.card.MaterialCardView
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/hinoModel"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hino"
+                android:gravity="center"
+                android:fontFamily="@font/sansita_bold"
+                android:textColor="@color/black"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/volvoModel"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Volvo"
+                android:gravity="center"
+                android:fontFamily="@font/sansita_bold"
+                android:textColor="@color/black"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/daewooModel"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Daewoo"
+                android:gravity="center"
+                android:fontFamily="@font/sansita_bold"
+                android:textColor="@color/black"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            app:cardCornerRadius="12dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="80dp">
+
+            <android.widget.Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/white"
+                android:background="@drawable/gradient"
+                android:text="Add Bus"
+                android:id="@+id/addBusBtn"
+                android:textSize="20sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"/>
+</LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBusScreen"
+    android:orientation="vertical">
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="100dp"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#375f45"
+        android:orientation="horizontal"
+        android:background="#375f45"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/back_icon"
+            app:tint="@color/white"
+            android:paddingVertical="11dp"
+            android:id="@+id/backBtn"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="Add Schedule"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:paddingVertical="10dp"
+            android:fontFamily="@font/sansita_regular"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingVertical="5dp"
+            app:tint="@color/white"
+            android:id="@+id/logout"
+            />
+
+    </LinearLayout>
+
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.5"
+            android:src="@drawable/schedules_icon"
+            android:padding="30dp"
+            android:scaleType="fitCenter"/>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="12dp"
+        android:backgroundTint="#E1DCDC"
+        app:cardElevation="6dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Departure Location"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="#656060"
+            android:id="@+id/departureLocation"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="12dp"
+        android:backgroundTint="#E1DCDC"
+        app:cardElevation="6dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Arrival Location"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="#656060"
+            android:id="@+id/arrivalLocation"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="12dp"
+        android:backgroundTint="#E1DCDC"
+        app:cardElevation="6dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Ticket Price"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="#656060"
+            android:inputType="number"
+            android:id="@+id/ticketPrice"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:strokeColor="#375f45"
+        app:strokeWidth="4dp"
+        android:layout_marginHorizontal="25dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/selectDeparture"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Select Departure Time"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:id="@+id/departureTime"
+            android:textSize="18dp"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:strokeColor="#375f45"
+        app:strokeWidth="4dp"
+        android:layout_marginHorizontal="25dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/selectArrival">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Select Arrival Time"
+            android:id="@+id/arrivalTime"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Bus"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/sansita_regular"/>
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@android:drawable/btn_dropdown"
+            android:id="@+id/busSpinner"
+            />
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="80dp">
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:background="@drawable/gradient"
+            android:text="Add Schedule"
+            android:id="@+id/addScheduleBtn"
+            android:textSize="20sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddShippingScreen"
+    android:orientation="vertical">
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="100dp"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#375f45"
+        android:orientation="horizontal"
+        android:background="#375f45"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/back_icon"
+            app:tint="@color/white"
+            android:paddingVertical="11dp"
+            android:id="@+id/backBtn"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="Add Shipping"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:paddingVertical="10dp"
+            android:fontFamily="@font/sansita_regular"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingVertical="5dp"
+            app:tint="@color/white"
+            android:id="@+id/logout"
+            />
+
+    </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:src="@drawable/shipping_icon"
+            android:padding="30dp"
+            android:scaleType="fitCenter"/>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="12dp"
+        android:backgroundTint="#E1DCDC"
+        app:cardElevation="6dp"
+        >
+
+        <EditText
+            android:gravity="start"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Enter Destination Address"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="#656060"
+            android:id="@+id/destinationAddress"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:strokeColor="#375f45"
+        app:strokeWidth="4dp"
+        android:layout_marginHorizontal="25dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/selectCheckout"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Select Checkout Time"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:id="@+id/checkoutTime"
+            android:textSize="18dp"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Select Shipping Type"
+        android:gravity="left"
+        android:layout_weight="0.5"
+        android:textColor="@color/black"
+        android:fontFamily="@font/sansita_bold"
+        android:textSize="20sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/gender_icons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.7"
+        android:layout_marginHorizontal="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:id="@+id/regularShipping"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Regular"
+                    android:gravity="center"
+                    android:fontFamily="@font/sansita_bold"
+                    android:textColor="@color/black"/>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="1 Week"
+                android:gravity="center"
+                android:fontFamily="@font/sansita_bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:id="@+id/fastShipping"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Fast"
+                    android:gravity="center"
+                    android:fontFamily="@font/sansita_bold"
+                    android:textColor="@color/black"/>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="3 Days"
+                android:gravity="center"
+                android:fontFamily="@font/sansita_bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="20dp">
+
+            <com.google.android.material.card.MaterialCardView
+                app:strokeColor="@color/black"
+                app:strokeWidth="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:layout_gravity="center"
+                android:id="@+id/extremeShipping"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Extreme"
+                    android:gravity="center"
+                    android:fontFamily="@font/sansita_bold"
+                    android:textColor="@color/black"/>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="1 Day"
+                android:gravity="center"
+                android:fontFamily="@font/sansita_bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Items Added: 0"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:id="@+id/itemCount"
+            android:paddingLeft="40dp"
+            android:fontFamily="@font/sansita_bold"
+            android:textColor="@color/black"/>
+
+        <android.widget.Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Add"
+            android:id="@+id/addItemsScreen"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/gradient"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="80dp">
+
+        <android.widget.Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:background="@drawable/gradient"
+            android:text="Add Shipping"
+            android:id="@+id/addShippingBtn"
+            android:textSize="20sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
